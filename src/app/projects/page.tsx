@@ -90,7 +90,7 @@ export default function Projects() {
           <div className="bg-gradient-to-r from-secondary to-accent rounded-2xl p-8 border border-highlight/20">
             <h3 className="text-2xl font-bold text-highlight mb-4">More Projects Coming Soon</h3>
             <p className="text-gray-300 mb-6">
-              I'm constantly working on new projects and learning new technologies. 
+              I am constantly working on new projects and learning new technologies. 
               Check back soon for more innovative solutions!
             </p>
             <a href="https://github.com/Jathartha" className="bg-highlight text-background px-6 py-3 rounded-lg font-semibold hover:bg-foreground hover:text-background transition-all duration-300">
