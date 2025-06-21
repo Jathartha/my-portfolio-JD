@@ -23,7 +23,7 @@ export default function Projects() {
                 </span>
               </div>
               
-              <h3 className="text-2xl font-bold text-highlight mb-4 group-hover:text-foreground transition-colors">
+              <h3 className="text-2xl font-bold text-highlight mb-4 group-hover:text-foreground transition-colors pr-16 sm:pr-0">
                 CampusCart - Online Sharing Platform
               </h3>
               
@@ -58,7 +58,7 @@ export default function Projects() {
                 </span>
               </div>
               
-              <h3 className="text-2xl font-bold text-highlight mb-4 group-hover:text-foreground transition-colors">
+              <h3 className="text-2xl font-bold text-highlight mb-4 group-hover:text-foreground transition-colors pr-16 sm:pr-0">
                 Blockchain based Wildlife Conservation System using IOT
               </h3>
               
