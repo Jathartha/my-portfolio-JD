@@ -26,11 +26,23 @@ export default function Contact() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      // You'll need to replace these with your actual EmailJS credentials
+      // EmailJS configuration - using environment variables if available, fallback to hardcoded values
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_f0fsn6k';
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_6z8ma36';
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '7Ff8bgzg7Vj8xgnjq';
+
       const result = await emailjs.send(
-        'service_f0fsn6k', // Replace with your EmailJS service ID
-        'template_6z8ma36', // Replace with your EmailJS template ID
+        serviceId,
+        templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -38,7 +50,7 @@ export default function Contact() {
           message: formData.message,
           to_email: 'dasjathartha@gmail.com'
         },
-        '7Ff8bgzg7Vj8xgnjq' // Replace with your EmailJS public key
+        publicKey
       );
 
       if (result.status === 200) {

@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js 15, TypeScript, and Ta
 
 ## 🌟 Live Demo
 
-**Vercel Deployment**: [Portfolio Link](https://jatharthadas.vercel.app/) _(Add your actual Vercel URL here)_  
+**Vercel Deployment**: [Portfolio Link](https://jatharthadas.vercel.app/)
 **GitHub Repository**: [Source Code](https://github.com/Jathartha/my-portfolio-JD)
 
 ## ✨ Features
