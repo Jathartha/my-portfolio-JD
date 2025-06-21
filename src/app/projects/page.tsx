@@ -4,7 +4,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-4 bg-gradient-to-r from-highlight to-foreground bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-4 bg-gradient-to-r from-highlight to-foreground bg-clip-text text-transparent" style={{ fontFamily: 'var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif', fontWeight: '700' }}>
             Projects
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
